@@ -1,15 +1,148 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
-    </head>
-    <body>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+        media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src="https://cdn1.iconfinder.com/data/icons/modern-future-technology/128/computer-chip2-2-128.png" style="height: 54px; margin:5px"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">Network</a>
+                    </li>
+                    <li>
+                        <a href="#">Fee Settings</a>
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Transactions -->
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header">
+                <table class="centered responsive-table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="images/address_to.png" />
+                            </td>
+                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
+                            <td>2017-12-15 12:07:18</td>
+                            <td>10.74240333 BTC</td>
+                            <td>
+                                <i class="material-icons">call_made</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="collapsible-body">
+                <table class="striped responsive-table">
+                    <thead>
+                        <th>Tx</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tx:
+                                <a src="https://blockchain.info/tx/38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784">38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="striped responsive-table">
+                    <thead>
+                        <th>From</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://blockchain.info/address/1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W">1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W</a>
+                            </td>
+                            <td>
+                                <span class="new badge grey" data-badge-caption="BTC">6.23454987</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="striped responsive-table">
+                    <thead>
+                        <th>To</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://blockchain.info/address/1Fu8MkxEyv8Ro962rapYbjgJFAqCN6q2uk">1Fu8MkxEyv8Ro962rapYbjgJFAqCN6q2uk</a>
+                            </td>
+                            <td>
+                                <span class="new badge red" data-badge-caption="BTC">0.12245303</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
+                            </td>
+                            <td>
+                                <span class="new badge green" data-badge-caption="BTC">6.11187084</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </li>
+    </ul>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+</html>
