@@ -34,86 +34,97 @@
             </div>
         </nav>
     </div>
+
+    <!-- New transaction -->
+    <table>
+        <thead>
+            <th>
+                New Transaction
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <i class="material-icons">edit</i>
+                    </div>
+                </td>
+                <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
+                <td>
+                    <div class="input-field">
+                        <input id="send_address" type="text" class="validate">
+                        <label class="active">To</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="input-field">
+                        <input id="send_amount" type="text" class="validate">
+                        <label class="active">Amount</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="input-field">
+                        <select>
+                            <option value="" disabled selected>Select fee</option>
+                            <option value="1">High</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Low</option>
+                        </select>
+                        <label></label>
+                    </div>
+                </td>
+                <td>
+                    <!-- Modal Trigger -->
+                    <a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">
+                        <i class="material-icons right">send</i>send</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+                <table class="responsive-table">
+                        <thead>
+                            <th>Review your transaction</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Address:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Amount:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fee:
+                                </td>
+                            </tr>
+                            <tr class="centered">
+                                <td>
+        
+                                </td>
+                                <td>
+        
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-action modal-close waves-effect waves-light btn red">
+                        <i class="material-icons right">clear</i>cancel</a>
+                    <a class="modal-action modal-close waves-effect waves-light btn green">
+                        <i class="material-icons right">check</i>confirm</a>
+                </div>
+        </div>
+    </div>
+
     <!-- Transactions -->
     <ul class="collapsible" data-collapsible="accordion">
-        <!-- New transaction -->
-        <li>
-            <div class="collapsible-header">
-                <table class="centered responsive-table">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="col s2">
-                                    <i class="material-icons">edit</i>
-                                </div>
-                            </td>
-                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
-                            <td class="col s6">
-                                <div class="input-field">
-                                    <input id="send_address" type="text" class="validate">
-                                    <label class="active">To</label>
-                                </div>
-                            </td>
-                            <td class=" col s2">
-                                <div class="input-field">
-                                    <input id="send_amount" type="text" class="validate">
-                                    <label class="active">Amount</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="input-field">
-                                    <select>
-                                        <option value="" disabled selected>Select fee</option>
-                                        <option value="1">High</option>
-                                        <option value="2">Normal</option>
-                                        <option value="3">Low</option>
-                                    </select>
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td>
-                                <a class="waves-effect waves-light btn-flat">
-                                    <i class="material-icons right">send</i>send</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="collapsible-body">
-                <table class=" centered responsive-table">
-                    <thead>
-                        <th>Review your transaction</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Address:</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Amount:
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Fee:
-                            </td>
-                        </tr>
-                        <tr class="centered">
-                            <td>
-                                <a class="waves-effect waves-light btn-large red">
-                                    <i class="material-icons right">clear</i>cancel</a>
-                            </td>
-                            <td>
-                                <a class="waves-effect waves-light btn-large green">
-                                    <i class="material-icons right">check</i>confirm</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </li>
-
-
         <li>
             <div class="collapsible-header">
                 <table class="centered responsive-table">
@@ -124,7 +135,7 @@
                             </td>
                             <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
                             <td>2017-12-15 12:07:18</td>
-                            <td>10.74240333 BTC</td>
+                            <td>6.11187084 BTC</td>
                             <td>
                                 <i class="material-icons">call_received</i>
                             </td>
@@ -292,6 +303,10 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('select').material_select();
+        });
+        $(document).ready(function () {
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
         });
     </script>
 </body>
