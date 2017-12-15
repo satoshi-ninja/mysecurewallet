@@ -46,7 +46,7 @@
             <tr>
                 <td>
                     <div>
-                        <i class="material-icons">edit</i>
+
                     </div>
                 </td>
                 <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
@@ -85,184 +85,198 @@
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
-                <table class="responsive-table">
-                        <thead>
-                            <th>Review your transaction</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> Address:</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Amount:
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Fee:
-                                </td>
-                            </tr>
-                            <tr class="centered">
-                                <td>
-        
-                                </td>
-                                <td>
-        
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <a class="modal-action modal-close waves-effect waves-light btn red">
-                        <i class="material-icons right">clear</i>cancel</a>
-                    <a class="modal-action modal-close waves-effect waves-light btn green">
-                        <i class="material-icons right">check</i>confirm</a>
-                </div>
+            <table class="responsive-table">
+                <thead>
+                    <th>Review your transaction</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Address:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Amount:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fee:
+                        </td>
+                    </tr>
+                    <tr class="centered">
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-light btn red">
+                <i class="material-icons right">clear</i>cancel</a>
+            <a class="modal-action modal-close waves-effect waves-light btn green">
+                <i class="material-icons right">check</i>confirm</a>
+        </div>
+    </div>
     </div>
 
     <!-- Transactions -->
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div class="collapsible-header">
-                <table class="centered responsive-table">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <i class="material-icons">link</i>
-                            </td>
-                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
-                            <td>2017-12-15 12:07:18</td>
-                            <td>6.11187084 BTC</td>
-                            <td>
-                                <i class="material-icons">call_received</i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="collapsible-body">
-                <table class="striped responsive-table">
-                    <thead>
-                        <th>Tx</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Tx:
-                                <a src="https://blockchain.info/tx/38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784">38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="striped responsive-table">
-                    <thead>
-                        <th>From</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://blockchain.info/address/1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W">1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W</a>
-                            </td>
-                            <td>
-                                <span class="new badge grey" data-badge-caption="BTC">6.11187084</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="striped responsive-table">
-                    <thead>
-                        <th>To</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
-                            </td>
-                            <td>
-                                <span class="new badge green" data-badge-caption="BTC">6.11187084</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </li>
+    <table>
+        <thead>
+            <th>
+                Transactions
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <table class="centered responsive-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="material-icons">link</i>
+                                            </td>
+                                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
+                                            <td>2017-12-15 12:07:18</td>
+                                            <td>6.11187084 BTC</td>
+                                            <td>
+                                                <i class="material-icons">call_received</i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="collapsible-body">
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <th>Tx</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> Tx:
+                                                <a src="https://blockchain.info/tx/38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784">38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <th>From</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://blockchain.info/address/1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W">1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W</a>
+                                            </td>
+                                            <td>
+                                                <span class="new badge grey" data-badge-caption="BTC">6.11187084</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <th>To</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
+                                            </td>
+                                            <td>
+                                                <span class="new badge green" data-badge-caption="BTC">6.11187084</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
 
 
 
-        <li>
-            <div class="collapsible-header">
-                <table class="centered responsive-table">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <i class="material-icons">link</i>
-                            </td>
-                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
-                            <td>2017-12-15 12:07:18</td>
-                            <td>10.74240333 BTC</td>
-                            <td>
-                                <i class="material-icons">call_made</i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="collapsible-body">
-                <table class="striped responsive-table">
-                    <thead>
-                        <th>Tx</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Tx:
-                                <a src="https://blockchain.info/tx/38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784">38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="striped responsive-table">
-                    <thead>
-                        <th>From</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://blockchain.info/address/1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W">1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W</a>
-                            </td>
-                            <td>
-                                <span class="new badge grey" data-badge-caption="BTC">6.23454987</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="striped responsive-table">
-                    <thead>
-                        <th>To</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://blockchain.info/address/1Fu8MkxEyv8Ro962rapYbjgJFAqCN6q2uk">1Fu8MkxEyv8Ro962rapYbjgJFAqCN6q2uk</a>
-                            </td>
-                            <td>
-                                <span class="new badge red" data-badge-caption="BTC">0.12245303</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
-                            </td>
-                            <td>
-                                <span class="new badge grey" data-badge-caption="BTC">6.11187084</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </li>
-    </ul>
+                        <li>
+                            <div class="collapsible-header">
+                                <table class="centered responsive-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="material-icons">link</i>
+                                            </td>
+                                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
+                                            <td>2017-12-15 12:07:18</td>
+                                            <td>10.74240333 BTC</td>
+                                            <td>
+                                                <i class="material-icons">call_made</i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="collapsible-body">
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <th>Tx</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> Tx:
+                                                <a src="https://blockchain.info/tx/38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784">38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <th>From</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://blockchain.info/address/1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W">1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W</a>
+                                            </td>
+                                            <td>
+                                                <span class="new badge grey" data-badge-caption="BTC">6.23454987</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <th>To</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://blockchain.info/address/1Fu8MkxEyv8Ro962rapYbjgJFAqCN6q2uk">1Fu8MkxEyv8Ro962rapYbjgJFAqCN6q2uk</a>
+                                            </td>
+                                            <td>
+                                                <span class="new badge red" data-badge-caption="BTC">0.12245303</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
+                                            </td>
+                                            <td>
+                                                <span class="new badge grey" data-badge-caption="BTC">6.11187084</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
     <!-- Footer -->
     <footer class="page-footer">
         <div class="container">
