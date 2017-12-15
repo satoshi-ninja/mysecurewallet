@@ -17,7 +17,9 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="https://cdn1.iconfinder.com/data/icons/modern-future-technology/128/computer-chip2-2-128.png" style="height: 54px; margin:5px"></a>
+                <a href="#" class="brand-logo">
+                    <img src="https://cdn1.iconfinder.com/data/icons/modern-future-technology/128/computer-chip2-2-128.png" style="height: 54px; margin:5px">
+                </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <a href="#">Network</a>
@@ -34,13 +36,157 @@
     </div>
     <!-- Transactions -->
     <ul class="collapsible" data-collapsible="accordion">
+        <!-- New transaction -->
         <li>
             <div class="collapsible-header">
                 <table class="centered responsive-table">
                     <tbody>
                         <tr>
                             <td>
-                                <img src="images/address_to.png" />
+                                <div class="col s2">
+                                    <i class="material-icons">edit</i>
+                                </div>
+                            </td>
+                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
+                            <td class="col s6">
+                                <div class="input-field">
+                                    <input id="send_address" type="text" class="validate">
+                                    <label class="active">To</label>
+                                </div>
+                            </td>
+                            <td class=" col s2">
+                                <div class="input-field">
+                                    <input id="send_amount" type="text" class="validate">
+                                    <label class="active">Amount</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected>Select fee</option>
+                                        <option value="1">High</option>
+                                        <option value="2">Normal</option>
+                                        <option value="3">Low</option>
+                                    </select>
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="waves-effect waves-light btn-flat">
+                                    <i class="material-icons right">send</i>send</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="collapsible-body">
+                <table class=" centered responsive-table">
+                    <thead>
+                        <th>Review your transaction</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Address:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Amount:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fee:
+                            </td>
+                        </tr>
+                        <tr class="centered">
+                            <td>
+                                <a class="waves-effect waves-light btn-large red">
+                                    <i class="material-icons right">clear</i>cancel</a>
+                            </td>
+                            <td>
+                                <a class="waves-effect waves-light btn-large green">
+                                    <i class="material-icons right">check</i>confirm</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </li>
+
+
+        <li>
+            <div class="collapsible-header">
+                <table class="centered responsive-table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="material-icons">link</i>
+                            </td>
+                            <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
+                            <td>2017-12-15 12:07:18</td>
+                            <td>10.74240333 BTC</td>
+                            <td>
+                                <i class="material-icons">call_received</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="collapsible-body">
+                <table class="striped responsive-table">
+                    <thead>
+                        <th>Tx</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tx:
+                                <a src="https://blockchain.info/tx/38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784">38b6b76a59c318a1d26442beb8473a350fd05611c546e12ce0cf4167acd99784</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="striped responsive-table">
+                    <thead>
+                        <th>From</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://blockchain.info/address/1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W">1C93nZpsfvipLVWWAHAr4zAPAaE9MUBK6W</a>
+                            </td>
+                            <td>
+                                <span class="new badge grey" data-badge-caption="BTC">6.11187084</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="striped responsive-table">
+                    <thead>
+                        <th>To</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
+                            </td>
+                            <td>
+                                <span class="new badge green" data-badge-caption="BTC">6.11187084</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </li>
+
+
+
+        <li>
+            <div class="collapsible-header">
+                <table class="centered responsive-table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="material-icons">link</i>
                             </td>
                             <!-- How to generate unique address icons: https://github.com/stewartlord/identicon.js -->
                             <td>2017-12-15 12:07:18</td>
@@ -98,7 +244,7 @@
                                 <a href="https://blockchain.info/address/1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48">1JFi2wDreBK67ry4uhZDRRDZsVvPLk8j48</a>
                             </td>
                             <td>
-                                <span class="new badge green" data-badge-caption="BTC">6.11187084</span>
+                                <span class="new badge grey" data-badge-caption="BTC">6.11187084</span>
                             </td>
                         </tr>
                     </tbody>
@@ -143,6 +289,11 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
 </body>
 
 </html>
